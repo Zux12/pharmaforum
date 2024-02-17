@@ -6,23 +6,49 @@
     <title>UiTM Student Forum</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            line-height: 1.6;
         }
         .header {
-            background-color: #004D99; /* Replace with the primary color of the UiTM logo */
+            background-color: #0056b3; /* Darker shade of blue for better contrast */
             color: #fff;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
-        .logo img {
-            height: 100px; /* Adjust based on the actual size of the logo */
+        .header .logo img {
+            height: 80px; /* Adjust based on the actual size of the logo */
         }
         .content {
             padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        p {
+            margin: 10px 0;
+        }
+        /* Additional styling for links */
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Styling for Disqus comments to stand out */
+        #disqus_thread {
+            background: #f9f9f9;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid #eaeaea;
         }
     </style>
 </head>
@@ -30,7 +56,6 @@
 
 <div class="header">
     <div class="logo">
-        <!-- Replace '' with the actual path to the UiTM logo -->
         <img src="https://www.its.ac.id/international/wp-content/uploads/sites/66/2021/07/UITM-LOGO-01.jpg" alt="UiTM Logo">
     </div>
     <h1>UiTM Student Forum</h1>
