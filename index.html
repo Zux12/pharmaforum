@@ -14,10 +14,11 @@
             line-height: 1.6;
         }
         .header {
-            background-color: #0056b3; /* Darker shade of blue for better contrast */
-            color: #fff;
+            background-color: #fff; /* Adjusted for white-background logo */
+            color: #0056b3;
             padding: 20px 0;
             text-align: center;
+            border-bottom: 5px solid #ffd700; /* Yellow border */
         }
         .header .logo img {
             height: 80px; /* Adjust based on the actual size of the logo */
@@ -32,10 +33,9 @@
         h1, h2 {
             color: #0056b3;
         }
-        p {
+        p, .disclaimer {
             margin: 10px 0;
         }
-        /* Additional styling for links */
         a {
             color: #0056b3;
             text-decoration: none;
@@ -43,7 +43,13 @@
         a:hover {
             text-decoration: underline;
         }
-        /* Styling for Disqus comments to stand out */
+        .disclaimer {
+            font-size: 0.8em;
+            background-color: #ffd700; /* Yellow background for disclaimer */
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
         #disqus_thread {
             background: #f9f9f9;
             padding: 20px;
@@ -76,6 +82,10 @@
         })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+    <div class="disclaimer">
+        <strong>Disclaimer:</strong> Please maintain a respectful and ethical demeanor when posting comments or replying to others on this forum. Inappropriate language, personal attacks, or off-topic discussions will not be tolerated. Let's create a constructive and supportive environment for all students and faculty.
+    </div>
 </div>
 
 </body>
